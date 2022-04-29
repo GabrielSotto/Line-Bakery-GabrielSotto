@@ -16,12 +16,6 @@ body {
     font-size: 1.2rem;
 }
 
-.carousel-item{
-    width: 100vw;
-    height: 20rem;
-    background-color: aqua;
-}
-
 .button{
     display: flex;
     justify-content: center;
