@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: coral;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*NAVBAR*/
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.carousel-item{
+    width: 100vw;
+    height: 20rem;
+    background-color: aqua;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.btn{
+    background-color:black;
+}
+
+.btn:hover{
+    background-color: coral;
+    color: black;
+    font-weight: bold;
+}
+/*ABOUT*/
+.nosotros{
+    width: 100%;
+    min-height: 37.3rem;
+    background-color:rgb(172, 172, 172);
+}
+
+.nosotros h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.img-nosotros{
+    height: 30rem;
+    width: 50%;
+    background-image: url(https://media.ratingcero.com/p/54125dfce1517d445c39cfef7fba606a/adjuntos/154/imagenes/022/119/0022119089/730x0/smart/maru-bpng.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.texto-nosotros{
+    width: 50%;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: auto;
+}
+
+footer i{
+    color: white;
+    font-size:1.4rem;
+    padding: 1em;
+}
