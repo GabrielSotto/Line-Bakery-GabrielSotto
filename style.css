@@ -5,16 +5,17 @@
 }
 
 body {
-    background: coral;
+    background-image: linear-gradient(to bottom, #f4e4ca, #ffe7dd, #ffeef0, #fef7fc, #ffffff);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-/*NAVBAR*/
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
 }
+
 
 .button{
     display: flex;
@@ -28,32 +29,63 @@ body {
 }
 
 .btn:hover{
-    background-color: coral;
+    background-color: white;
     color: black;
     font-weight: bold;
 }
+
+/*HOME*/
+
+.home{
+    height: 100vh;
+    background-image: url(./images/fondo-home-pan.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/fondo-home-pan.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-h1{
+    color: white;
+}
+
+.home-p{
+    color: white;
+}
+
 /*ABOUT*/
+
 .nosotros{
-    width: 100%;
-    min-height: 37.3rem;
-    background-color:rgb(172, 172, 172);
+    padding: 10px;
 }
 
 .nosotros h2{
     font-size: 50px;
     text-transform: uppercase;
+    color: white;
 }
 
 .img-nosotros{
-    height: 30rem;
-    width: 50%;
-    background-image: url(https://media.ratingcero.com/p/54125dfce1517d445c39cfef7fba606a/adjuntos/154/imagenes/022/119/0022119089/730x0/smart/maru-bpng.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     background-size: cover;
     background-position: center;
 }
 
 .texto-nosotros{
     width: 50%;
+}
+
+/*CONTACT*/
+
+.justify-content-center{
+    padding: 20px;
+}
+
+.textarea{
+    resize: none;
+    margin-bottom: 10px;
 }
 
 /*FOOTER*/
