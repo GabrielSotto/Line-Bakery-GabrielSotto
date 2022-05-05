@@ -53,6 +53,11 @@ body {
     color: white;
 }
 
+.fila-home{
+    align-content: center;
+    height: 600px;
+}
+
 /*ABOUT*/
 
 .nosotros{
