@@ -47,10 +47,12 @@ body {
 
 .home-h1{
     color: white;
+    font-size: 50px;
 }
 
 .home-p{
     color: white;
+    font-size: 25px;
 }
 
 .fila-home{
