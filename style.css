@@ -13,7 +13,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 1.2rem;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 .home h1 {
   color: white;
-  font-size: 50px;
+  font-size: 70px;
 }
 .home P {
   color: white;
@@ -99,6 +99,4 @@ footer i {
   color: white;
   font-size: 1.4rem;
   padding: 1em;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+$color1: white;
+$color2: black;
+
 body {
     background-image: linear-gradient(to bottom, #f4e4ca, #ffe7dd, #ffeef0, #fef7fc, #ffffff);
     display: flex;
@@ -14,7 +17,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(255, 255, 255);
+    color: $color1;
     font-size: 1.2rem;
 }
 
@@ -30,8 +33,8 @@ body {
     background-color:black;
     
     :hover{
-        background-color: white;
-        color: black;
+        background-color: $color1;
+        color: $color2;
         font-weight: bold;
     }
 }
@@ -50,12 +53,12 @@ body {
     justify-content: center;
 
     h1{
-        color: white;
-        font-size: 50px;
+        color: $color1;
+        font-size: 70px;
     }
 
     P{
-        color: white;
+        color: $color1;
         font-size: 25px;
     }
 }
@@ -73,7 +76,7 @@ body {
     H2{
         font-size: 50px;
         text-transform: uppercase;
-        color: white;
+        color: $color1;
     }
 }
 
@@ -106,7 +109,7 @@ footer{
     margin-top: auto;
 
     i{
-        color: white;
+        color: $color1;
         font-size:1.4rem;
         padding: 1em;
     }
