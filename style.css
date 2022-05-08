@@ -41,8 +41,9 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
-
 .home h1 {
   color: white;
   font-size: 50px;
@@ -50,6 +51,11 @@ body {
 .home P {
   color: white;
   font-size: 25px;
+}
+
+.fila-home {
+  display: flex;
+  align-items: center;
 }
 
 /*ABOUT*/
