@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Nunito:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,200&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Montserrat:ital,wght@0,400;1,100&family=Nunito:wght@200;400&family=Poppins:wght@100;200;300;400&display=swap');
 
 *{
     margin: 0;
@@ -8,6 +8,11 @@
 
 $color1: white;
 $color2: black;
+$color3: rgb(252, 165, 93);
+$font-Montserrat: 'Montserrat', sans-serif;
+$font-Nunito: 'Nunito', sans-serif;
+$font-Poppins: 'Poppins', sans-serif;
+$font-Amita: 'Amita', sans-serif;
 
 body {
     background-image: linear-gradient(to bottom, #f4e4ca, #ffe7dd, #ffeef0, #fef7fc, #ffffff);
@@ -16,9 +21,20 @@ body {
     min-height: 100vh;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: $color1;
-    font-size: 1.2rem;
+.navbar-dark{ 
+    .navbar-nav {
+        .nav-link {
+        color: $color1;
+        font-size: 1.2rem;
+        font-family: $font-Roboto;
+        text-transform: uppercase;
+        }
+
+    }
+}
+
+.navbar-brand{
+    font-family: $font-Amita;
 }
 
 
@@ -30,9 +46,9 @@ body {
 }
 
 .btn{
-    background-color:black;
+    background-color: $color3;
     
-    :hover{
+    &:hover{
         background-color: $color1;
         color: $color2;
         font-weight: bold;
@@ -60,6 +76,7 @@ body {
     P{
         color: $color1;
         font-size: 25px;
+        font-family: $font-Poppins;
     }
 }
 

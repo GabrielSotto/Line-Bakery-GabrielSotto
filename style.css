@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Nunito:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,200&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;1,100;1,300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Nunito:wght@300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,600;1,200&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Water+Brush&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +15,12 @@ body {
 .navbar-dark .navbar-nav .nav-link {
   color: white;
   font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
 }
 
 .button {
@@ -25,9 +31,9 @@ body {
 }
 
 .btn {
-  background-color: black;
+  background-color: rgb(252, 165, 93);
 }
-.btn :hover {
+.btn:hover {
   background-color: white;
   color: black;
   font-weight: bold;
@@ -51,6 +57,7 @@ body {
 .home P {
   color: white;
   font-size: 25px;
+  font-family: "Poppins", sans-serif;
 }
 
 .fila-home {
