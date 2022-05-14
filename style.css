@@ -17,10 +17,20 @@ body {
   font-size: 1.2rem;
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link :focus {
+  background-size: 100% 2px;
 }
 
 .navbar-brand {
   font-family: "Amita", sans-serif;
+  font-size: 2rem;
 }
 
 .button {
@@ -31,7 +41,7 @@ body {
 }
 
 .btn {
-  background-color: rgb(252, 165, 93);
+  background-color: rgb(246, 151, 73);
 }
 .btn:hover {
   background-color: white;
@@ -52,7 +62,7 @@ body {
 }
 .home h1 {
   color: white;
-  font-size: 70px;
+  font-size: 60px;
 }
 .home P {
   color: white;
@@ -88,6 +98,12 @@ body {
   width: 50%;
 }
 
+.about-text, .card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+
+/*PRODUCTS*/
 /*CONTACT*/
 .justify-content-center {
   padding: 20px;

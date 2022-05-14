@@ -8,7 +8,7 @@
 
 $color1: white;
 $color2: black;
-$color3: rgb(252, 165, 93);
+$color3: rgb(246, 151, 73);
 $font-Montserrat: 'Montserrat', sans-serif;
 $font-Nunito: 'Nunito', sans-serif;
 $font-Poppins: 'Poppins', sans-serif;
@@ -28,13 +28,24 @@ body {
         font-size: 1.2rem;
         font-family: $font-Nunito;
         text-transform: uppercase;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        &:hover, :focus {
+            background-size: 100% 2px;
         }
+        }
+
 
     }
 }
 
 .navbar-brand{
     font-family: $font-Amita;
+    font-size: 2rem;
 }
 
 
@@ -70,7 +81,7 @@ body {
 
     h1{
         color: $color1;
-        font-size: 70px;
+        font-size: 60px;
     }
 
     P{
@@ -107,6 +118,17 @@ body {
 
 .texto-nosotros{
     width: 50%;
+}
+
+.about-text{
+    font-family: $font-Poppins;
+    font-size: 1.2rem;
+}
+
+/*PRODUCTS*/
+
+.card-text{
+    @extend .about-text;
 }
 
 /*CONTACT*/
