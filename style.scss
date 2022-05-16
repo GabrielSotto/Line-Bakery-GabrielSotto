@@ -6,9 +6,12 @@
     box-sizing: border-box;
 }
 
-$color1: white;
-$color2: black;
-$color3: rgb(246, 151, 73);
+$colores:(
+$color1: white,
+$color2: black,
+$color3: rgb(246, 151, 73));
+
+
 $font-Montserrat: 'Montserrat', sans-serif;
 $font-Nunito: 'Nunito', sans-serif;
 $font-Poppins: 'Poppins', sans-serif;
@@ -32,14 +35,12 @@ body {
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;
         background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;
+        background-size: 0% 8px;
+        transition: background-size .5s;
         &:hover, :focus {
             background-size: 100% 2px;
         }
         }
-
-
     }
 }
 
@@ -57,7 +58,7 @@ body {
 }
 
 .btn{
-    background-color: $color3;
+    background-color: map-get($colores, $color3 );
     
     &:hover{
         background-color: $color1;
@@ -98,6 +99,11 @@ body {
 
 /*ABOUT*/
 
+@mixin about {
+    font-family: $font-Poppins;
+    font-size: 1.2rem;
+}
+
 .nosotros{
     padding: 10px;
 
@@ -121,8 +127,7 @@ body {
 }
 
 .about-text{
-    font-family: $font-Poppins;
-    font-size: 1.2rem;
+    @include about;
 }
 
 /*PRODUCTS*/
@@ -144,6 +149,19 @@ body {
 
 /*FOOTER*/
 
+$mapa:(
+    color1:rgb(59, 89, 152),
+    color2:rgb(251, 117, 21),
+    color3:rgb(0, 172, 238)
+);
+
+@each $color1, $color in $mapa{
+    .redes--#{$color1}:hover{
+        color: $color;
+    }
+    }
+
+
 footer{
     margin-top: auto;
 
@@ -151,5 +169,8 @@ footer{
         color: $color1;
         font-size:1.4rem;
         padding: 1em;
+        &:hover{
+            transform: scale(1.5);
+        }
     }
 }
