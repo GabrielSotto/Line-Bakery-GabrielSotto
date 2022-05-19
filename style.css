@@ -62,11 +62,12 @@ body {
 }
 .home h1 {
   color: white;
-  font-size: 60px;
+  font-family: "Amita", sans-serif;
+  font-size: 50px;
 }
 .home P {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -136,5 +137,5 @@ footer i {
   padding: 1em;
 }
 footer i:hover {
-  transform: scale(1.5);
+  transform: scale(1.3);
 }/*# sourceMappingURL=style.css.map */
